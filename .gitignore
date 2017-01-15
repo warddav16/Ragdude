@@ -30,3 +30,5 @@ sysinfo.txt
 *.unitypackage
 /Ragdude/Library
 /Ragdude/Temp
+/RagdollTest/Library
+/RagdollTest/Temp
