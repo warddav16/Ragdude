@@ -21,6 +21,7 @@ public class Enemy : MonoBehaviour
     NavMeshAgent _navAgent;
     Collider _collider;
     float _downTimeTimer = 0.0f;
+    public Transform Pelvis;
 
 
     public float DownTime = 3.0f;
@@ -51,6 +52,7 @@ public class Enemy : MonoBehaviour
         if ( _currState == State.ComingForYa )
         {
             _currState = State.Ragdoll;
+            _animator.SetTrigger("Ragdoll");
             ToggleRagdoll( true );
             _downTimeTimer = 0.0f;
             _navAgent.enabled = false;
@@ -59,6 +61,7 @@ public class Enemy : MonoBehaviour
 
     public void OnIsStanding()
     {
+        Debug.Log("Is Standing");
         _currState = State.ComingForYa;
         _navAgent.enabled = true;
     }
@@ -76,6 +79,7 @@ public class Enemy : MonoBehaviour
                 {
                     ToggleRagdoll( false );
                     _currState = State.StandinUp;
+                    _animator.SetTrigger("StandUp");
                 }
                 break;
             case State.StandinUp:
