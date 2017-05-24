@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
                 Enemy enemy = outInfo.collider.transform.root.GetComponent<Enemy>();
                 if( enemy )
                 {
-                    enemy.TakeHit();
+                    enemy.TakeHit(outInfo.collider);
                     Vector3 knockbackDir = ( outInfo.point - _cam.transform.position ).normalized;
                     outInfo.rigidbody.AddForce(knockbackDir * Knockback, ForceMode.Impulse);
                 }
