@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour, IDamagable
     public Transform Pelvis;
     public int maxHealth = 100;
     int _currentHealth = 100;
-
+    public GameObject _mapPoint;
 
     public float DownTime = 3.0f;
     public BodyPartDamages bodyDamage;
@@ -146,6 +146,7 @@ public class Enemy : MonoBehaviour, IDamagable
         if(_currentHealth <= 0)
         {
             transform.root.GetChild(1).GetComponent<Renderer>().material.color = Color.black;
+            Destroy(_mapPoint);
             _currState = State.Dead;
         }
     }
