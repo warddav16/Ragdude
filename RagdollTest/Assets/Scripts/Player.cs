@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     Camera _cam;
     public float Knockback = 1.0f;
     public int movementSpeed = 2, rotationSpeed = 2;
+    public float phoneSpeed = .25f;
     
 
     void Awake()
@@ -18,7 +19,13 @@ public class Player : MonoBehaviour
     {
         //transform.Translate(0, 0, Input.GetAxis("Vertical") * movementSpeed * Time.deltaTime);
         transform.Rotate(0, Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime, 0) ;
-        if( Input.GetMouseButtonDown(0) )
+        //transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, Input.GetAxis("Horizontal"), 0), Time.deltaTime * rotationSpeed));
+        if (Input.touchCount > 0)
+        {
+            transform.Rotate(0, Input.touches[0].deltaPosition.x * phoneSpeed * Time.deltaTime, 0);
+            
+        }
+        if ( Input.GetMouseButtonDown(0) )
         {
             Ray ray = _cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit outInfo;

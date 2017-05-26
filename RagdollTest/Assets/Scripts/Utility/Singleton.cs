@@ -22,7 +22,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
                 Debug.LogWarning("[Singleton] Instance '" + typeof(T) +
                     "' already destroyed on application quit." +
                     " Won't create again - returning null.");
-                return null;
+                //return null; NEED A BETTER WAY!!
             }
 
             lock (_lock)
