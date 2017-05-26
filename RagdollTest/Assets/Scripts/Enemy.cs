@@ -139,15 +139,19 @@ public class Enemy : MonoBehaviour, IDamagable
             case State.StandinUp:
                 break;
             case State.Dead:
-                Debug.Log("Dead");
-                transform.position = Vector3.forward * 5;
                 break;
         }
-        if(_currentHealth <= 0)
+        if(_currState != State.Dead && _currentHealth <= 0)
         {
-            transform.root.GetChild(1).GetComponent<Renderer>().material.color = Color.black;
-            Destroy(_mapPoint);
-            _currState = State.Dead;
+            Die();
         }
+    }
+    void Die()
+    {
+        transform.root.GetChild(1).GetComponent<Renderer>().material.color = Color.black;
+        Destroy(_mapPoint);
+        _currState = State.Dead;
+        ScoreManager.Instance.AddScore(1);
+        //transform.position += Vector3.forward * 5;
     }
 }

@@ -22,11 +22,6 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     void Spawn()
     {
         var j = Random.Range(0, 360);

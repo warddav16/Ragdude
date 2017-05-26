@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
 {
     Camera _cam;
     public float Knockback = 1.0f;
+    public int movementSpeed = 2, rotationSpeed = 2;
+    
 
     void Awake()
     {
@@ -14,6 +16,8 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        //transform.Translate(0, 0, Input.GetAxis("Vertical") * movementSpeed * Time.deltaTime);
+        transform.Rotate(0, Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime, 0) ;
         if( Input.GetMouseButtonDown(0) )
         {
             Ray ray = _cam.ScreenPointToRay(Input.mousePosition);
