@@ -1,0 +1,369 @@
+fileFormatVersion: 2
+guid: dd4685b3735e3ab439e33324b6f959d8
+timeCreated: 1477625141
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Head
+    100002: HeadTop_End
+    100004: joint1
+    100006: joint10
+    100008: joint11
+    100010: joint12
+    100012: joint13
+    100014: joint2
+    100016: joint3
+    100018: joint4
+    100020: joint5
+    100022: joint6
+    100024: joint7
+    100026: joint8
+    100028: joint9
+    100030: LeftFoot
+    100032: LeftFootToeBase_End
+    100034: LeftFootToeBase_End1
+    100036: LeftHandIndex1
+    100038: LeftHandIndex2
+    100040: LeftHandIndex3
+    100042: LeftHandIndex4
+    100044: LeftHandIndex5
+    100046: LeftHandIndex6
+    100048: LeftHandMiddle1
+    100050: LeftHandMiddle2
+    100052: LeftHandMiddle3
+    100054: LeftHandMiddle4
+    100056: LeftHandMiddle5
+    100058: LeftHandMiddle6
+    100060: LeftHandPinky1
+    100062: LeftHandPinky2
+    100064: LeftHandPinky3
+    100066: LeftHandPinky4
+    100068: LeftHandPinky5
+    100070: LeftHandPinky6
+    100072: LeftHandRing1
+    100074: LeftHandRing2
+    100076: LeftHandRing3
+    100078: LeftHandRing4
+    100080: LeftHandRing5
+    100082: LeftHandRing6
+    100084: LeftHandThumb1
+    100086: LeftHandThumb2
+    100088: LeftHandThumb3
+    100090: LeftHandThumb4
+    100092: LeftHandThumb5
+    100094: LeftHandThumb6
+    100096: LeftLeg
+    100098: LeftToeBase
+    100100: LeftUpLeg
+    100102: Neck
+    100104: RightFoot
+    100106: RightHandIndex8
+    100108: RightHandIndex9
+    100110: RightHandMiddle8
+    100112: RightHandMiddle9
+    100114: RightHandPinky8
+    100116: RightHandPinky9
+    100118: RightHandRing8
+    100120: RightHandRing9
+    100122: RightHandThumb8
+    100124: RightHandThumb9
+    100126: RightLeg
+    100128: RightToeBase
+    100130: RightUpLeg
+    100132: //RootNode
+    400000: Head
+    400002: HeadTop_End
+    400004: joint1
+    400006: joint10
+    400008: joint11
+    400010: joint12
+    400012: joint13
+    400014: joint2
+    400016: joint3
+    400018: joint4
+    400020: joint5
+    400022: joint6
+    400024: joint7
+    400026: joint8
+    400028: joint9
+    400030: LeftFoot
+    400032: LeftFootToeBase_End
+    400034: LeftFootToeBase_End1
+    400036: LeftHandIndex1
+    400038: LeftHandIndex2
+    400040: LeftHandIndex3
+    400042: LeftHandIndex4
+    400044: LeftHandIndex5
+    400046: LeftHandIndex6
+    400048: LeftHandMiddle1
+    400050: LeftHandMiddle2
+    400052: LeftHandMiddle3
+    400054: LeftHandMiddle4
+    400056: LeftHandMiddle5
+    400058: LeftHandMiddle6
+    400060: LeftHandPinky1
+    400062: LeftHandPinky2
+    400064: LeftHandPinky3
+    400066: LeftHandPinky4
+    400068: LeftHandPinky5
+    400070: LeftHandPinky6
+    400072: LeftHandRing1
+    400074: LeftHandRing2
+    400076: LeftHandRing3
+    400078: LeftHandRing4
+    400080: LeftHandRing5
+    400082: LeftHandRing6
+    400084: LeftHandThumb1
+    400086: LeftHandThumb2
+    400088: LeftHandThumb3
+    400090: LeftHandThumb4
+    400092: LeftHandThumb5
+    400094: LeftHandThumb6
+    400096: LeftLeg
+    400098: LeftToeBase
+    400100: LeftUpLeg
+    400102: Neck
+    400104: RightFoot
+    400106: RightHandIndex8
+    400108: RightHandIndex9
+    400110: RightHandMiddle8
+    400112: RightHandMiddle9
+    400114: RightHandPinky8
+    400116: RightHandPinky9
+    400118: RightHandRing8
+    400120: RightHandRing9
+    400122: RightHandThumb8
+    400124: RightHandThumb9
+    400126: RightLeg
+    400128: RightToeBase
+    400130: RightUpLeg
+    400132: //RootNode
+    7400000: RollOver
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: RollOver
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: joint5
+        weight: 1
+      - path: joint5/joint1
+        weight: 1
+      - path: joint5/joint1/joint2
+        weight: 1
+      - path: joint5/joint1/joint2/joint3
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8/joint9
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8/joint9/LeftHandIndex1
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8/joint9/LeftHandIndex1/LeftHandIndex2
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8/joint9/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8/joint9/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3/RightHandIndex8
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8/joint9/LeftHandMiddle1
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8/joint9/LeftHandMiddle1/LeftHandMiddle2
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8/joint9/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8/joint9/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3/RightHandMiddle8
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8/joint9/LeftHandPinky1
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8/joint9/LeftHandPinky1/LeftHandPinky2
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8/joint9/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8/joint9/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3/RightHandPinky8
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8/joint9/LeftHandRing1
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8/joint9/LeftHandRing1/LeftHandRing2
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8/joint9/LeftHandRing1/LeftHandRing2/LeftHandRing3
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8/joint9/LeftHandRing1/LeftHandRing2/LeftHandRing3/RightHandRing8
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8/joint9/LeftHandThumb1
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8/joint9/LeftHandThumb1/LeftHandThumb2
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8/joint9/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint6/joint7/joint8/joint9/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3/RightHandThumb8
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/LeftHandIndex4
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/LeftHandIndex4/LeftHandIndex5
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/LeftHandIndex4/LeftHandIndex5/LeftHandIndex6
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/LeftHandIndex4/LeftHandIndex5/LeftHandIndex6/RightHandIndex9
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/LeftHandMiddle4
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/LeftHandMiddle4/LeftHandMiddle5
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/LeftHandMiddle4/LeftHandMiddle5/LeftHandMiddle6
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/LeftHandMiddle4/LeftHandMiddle5/LeftHandMiddle6/RightHandMiddle9
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/LeftHandPinky4
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/LeftHandPinky4/LeftHandPinky5
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/LeftHandPinky4/LeftHandPinky5/LeftHandPinky6
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/LeftHandPinky4/LeftHandPinky5/LeftHandPinky6/RightHandPinky9
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/LeftHandRing4
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/LeftHandRing4/LeftHandRing5
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/LeftHandRing4/LeftHandRing5/LeftHandRing6
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/LeftHandRing4/LeftHandRing5/LeftHandRing6/RightHandRing9
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/LeftHandThumb4
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/LeftHandThumb4/LeftHandThumb5
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/LeftHandThumb4/LeftHandThumb5/LeftHandThumb6
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/LeftHandThumb4/LeftHandThumb5/LeftHandThumb6/RightHandThumb9
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/Neck
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/Neck/Head
+        weight: 1
+      - path: joint5/joint1/joint2/joint3/joint4/Neck/Head/HeadTop_End
+        weight: 1
+      - path: joint5/joint1/LeftUpLeg
+        weight: 1
+      - path: joint5/joint1/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: joint5/joint1/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: joint5/joint1/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: joint5/joint1/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase/LeftFootToeBase_End
+        weight: 1
+      - path: joint5/joint1/RightUpLeg
+        weight: 1
+      - path: joint5/joint1/RightUpLeg/RightLeg
+        weight: 1
+      - path: joint5/joint1/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: joint5/joint1/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: joint5/joint1/RightUpLeg/RightLeg/RightFoot/RightToeBase/LeftFootToeBase_End1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

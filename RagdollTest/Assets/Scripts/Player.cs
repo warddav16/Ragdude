@@ -34,4 +34,17 @@ public class Player : MonoBehaviour
             }
         }
     }
+    void OnCollisionEnter(Collision col)
+    {
+        if(col.transform.root.tag == "enemy")
+        {
+            Die();
+        }
+    }
+     void Die()
+    {
+        Time.timeScale = 0;
+        ScoreManager.Instance.SaveScore();
+        GameObject.FindGameObjectWithTag("GameOver").transform.GetChild(0).gameObject.SetActive(true);
+    }
 }

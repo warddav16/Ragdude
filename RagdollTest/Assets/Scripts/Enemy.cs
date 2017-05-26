@@ -29,6 +29,8 @@ public class Enemy : MonoBehaviour, IDamagable
 
     public float DownTime = 3.0f;
     public BodyPartDamages bodyDamage;
+    public int deathTimeBeforeCleanup = 5;
+    float _deathTimer = 0;
     [System.Serializable]
     public class BodyPartDamages
     {
@@ -42,6 +44,7 @@ public class Enemy : MonoBehaviour, IDamagable
         _player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         _navAgent = GetComponent<NavMeshAgent>();
         _collider = GetComponent<Collider>();
+        _deathTimer = 0;
         ToggleRagdoll(false);
     }
 
@@ -139,6 +142,11 @@ public class Enemy : MonoBehaviour, IDamagable
             case State.StandinUp:
                 break;
             case State.Dead:
+                _deathTimer += Time.deltaTime;
+                if(_deathTimer > deathTimeBeforeCleanup)
+                {
+                    Destroy(gameObject);
+                }
                 break;
         }
         if(_currState != State.Dead && _currentHealth <= 0)

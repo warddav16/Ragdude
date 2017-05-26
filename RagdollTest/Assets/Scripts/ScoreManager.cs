@@ -34,4 +34,29 @@ public class ScoreManager : Singleton<ScoreManager>
     {
         _textScript.text = string.Format("{0} {1}", scoreText, _score);
     }
+    public void SaveScore()
+    {
+        if(!PlayerPrefs.HasKey("HighScore"))
+        {
+            PlayerPrefs.SetInt("HighScore", _score);
+        }
+        else
+        {
+            if(PlayerPrefs.GetInt("HighScore") < _score)
+            {
+                PlayerPrefs.SetInt("HighScore", _score);
+            }
+        }
+    }
+    public int GetScore()
+    {
+        return _score;
+    }
+    public int GetHighScore()
+    {
+        //if(PlayerPrefs.HasKey("HighScore"))
+        //{
+            return PlayerPrefs.GetInt("HighScore");
+        //}
+    }
 }
