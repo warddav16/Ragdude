@@ -24,6 +24,7 @@ public class Enemy : MonoBehaviour, IDamagable
     Collider _collider;
     float _downTimeTimer = 0.0f;
     public Transform Pelvis;
+    public Transform TrueRoot;
     public int maxHealth = 100;
     int _currentHealth = 100;
     public GameObject _mapPoint;
@@ -136,6 +137,9 @@ public class Enemy : MonoBehaviour, IDamagable
                 _downTimeTimer += Time.deltaTime;
                 if( _downTimeTimer >= DownTime)
                 {
+                    Vector3 curr = transform.position;
+                    transform.MoveOnlyParent(TrueRoot.position);
+                    transform.position = new Vector3(transform.position.x, curr.y, transform.position.z);
                     ToggleRagdoll(false);
                     _animator.SetBool("Waiting", false);
                     _currState = State.StandinUp;
@@ -156,9 +160,10 @@ public class Enemy : MonoBehaviour, IDamagable
         {
             _currState = State.Dead;
             _navAgent.enabled = false;
-            Die();
+           // Die();
         }
     }
+
     void Die()
     {
         transform.root.GetChild(1).GetComponent<Renderer>().material.color = Color.black;
