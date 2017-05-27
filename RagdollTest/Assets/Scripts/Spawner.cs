@@ -12,8 +12,10 @@ public class Spawner : MonoBehaviour
     }
     public int radius = 10;
     public int spawnOnStart = 10;
-    public int waitBetweenSpawn = 3;
+    public int waitBetweenEnemySpawn = 3, waitBetweenDropSpawn = 30;
+
     public RandomRange RandomSpawnAmount;
+    public GameObject[] weapons;
 
     public GameObject toSpawn;
     GameObject _player;
@@ -25,17 +27,24 @@ public class Spawner : MonoBehaviour
     }
     void Start()
     {
-        StartCoroutine(RepeatingSpawn());
+        //StartCoroutine(RepeatingSpawn());
+        StartCoroutine(Drops());
     }
     IEnumerator RepeatingSpawn()
     {
         while (isSpawning)
         {
-            Spawn(Random.Range(RandomSpawnAmount.Min, RandomSpawnAmount.Max));
-            yield return new WaitForSeconds(waitBetweenSpawn);
+            Spawn(Random.Range(RandomSpawnAmount.Min, RandomSpawnAmount.Max), toSpawn);
+            yield return new WaitForSeconds(waitBetweenEnemySpawn);
         }
     }
-    void Spawn(int spawnNum)
+    IEnumerator Drops()
+    {
+        var toSpawn = weapons[Random.Range(0, weapons.Length)];
+        Spawn(1, toSpawn);
+        yield return new WaitForSeconds(waitBetweenDropSpawn);
+    }
+    void Spawn(int spawnNum, GameObject toSpawn)
     {
         for (int i = 0; i < spawnNum; i++)
         {
