@@ -31,9 +31,11 @@ public class Player : MonoBehaviour
             RaycastHit outInfo;
             if( Physics.Raycast(ray, out outInfo) )
             {
+                //if outInfo.distance
                 Enemy enemy = outInfo.collider.transform.root.GetComponent<Enemy>();
-                if( enemy )
+                if(enemy)
                 {
+                    print(outInfo.distance);
                     enemy.TakeHit(outInfo.collider);
                     Vector3 knockbackDir = ( outInfo.point - _cam.transform.position ).normalized;
                     outInfo.rigidbody.AddForce(knockbackDir * Knockback, ForceMode.Impulse);

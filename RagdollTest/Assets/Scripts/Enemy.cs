@@ -104,9 +104,12 @@ public class Enemy : MonoBehaviour, IDamagable
 
         if ( _currState == State.ComingForYa )
         {
-            _currState = State.Waiting;
-            _animator.SetBool("Waiting", true);
-        
+            _animator.SetTrigger("Ragdoll");
+            ToggleRagdoll(true);
+            _navAgent.enabled = false;
+            _downTimeTimer = 0.0f;
+            _currState = State.Ragdoll;
+
         }
     }
     public void Damage(int Damage)
@@ -131,7 +134,7 @@ public class Enemy : MonoBehaviour, IDamagable
                 break;
             case State.Ragdoll:
                 _downTimeTimer += Time.deltaTime;
-                if( _downTimeTimer >= DownTime && !_animator.GetCurrentAnimatorStateInfo(0).IsName("idle_nomesh_anim"))
+                if( _downTimeTimer >= DownTime)
                 {
                     ToggleRagdoll(false);
                     _animator.SetBool("Waiting", false);
@@ -140,16 +143,6 @@ public class Enemy : MonoBehaviour, IDamagable
                 }
                 break;
             case State.StandinUp:
-                break;
-            case State.Waiting:
-                if(!_animator.GetCurrentAnimatorStateInfo(0).IsName("idle_nomesh_anim"))
-                {
-                    _animator.SetTrigger("Ragdoll");
-                    ToggleRagdoll(true);
-                    _downTimeTimer = 0.0f;
-                    _navAgent.enabled = false;
-                    _currState = State.Ragdoll;
-                }
                 break;
             case State.Dead:
                 _deathTimer += Time.deltaTime;
@@ -161,6 +154,8 @@ public class Enemy : MonoBehaviour, IDamagable
         }
         if(_currState != State.Dead && _currentHealth <= 0)
         {
+            _currState = State.Dead;
+            _navAgent.enabled = false;
             Die();
         }
     }
