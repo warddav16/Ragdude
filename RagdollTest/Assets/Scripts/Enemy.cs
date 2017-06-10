@@ -16,6 +16,13 @@ public class Enemy : MonoBehaviour, IDamagable
         Dead
     }
 
+    public class Bone
+    {
+        public Transform transform;
+        public Vector3 originalPos;
+        public Quaternion originalRot;
+    }
+
     Animator _animator;
     Rigidbody[] _bodies;
     State _currState = State.ComingForYa;
@@ -28,6 +35,10 @@ public class Enemy : MonoBehaviour, IDamagable
     public int maxHealth = 100;
     int _currentHealth = 100;
     public GameObject _mapPoint;
+    List<Bone> _boneList = new List<Bone>();
+    float _standUpTimer = 0.0f;
+    public float RagdollBlendTime = 0.5f;
+    public Transform HipJoint;
 
     public float DownTime = 3.0f;
     public BodyPartDamages bodyDamage;
@@ -48,6 +59,14 @@ public class Enemy : MonoBehaviour, IDamagable
         _collider = GetComponent<Collider>();
         _deathTimer = 0;
         ToggleRagdoll(false);
+
+        var boneTransforms = TrueRoot.gameObject.GetComponentsInChildren<Transform>();
+        for( int i = 0; i < boneTransforms.Length; ++i )
+        {
+            Bone b = new Bone();
+            b.transform = boneTransforms[i];
+            _boneList.Add(b);
+        }
     }
 
     void ToggleRagdoll( bool toggle )
@@ -128,21 +147,26 @@ public class Enemy : MonoBehaviour, IDamagable
 
     void Update()
     {
-        switch( _currState )
+        switch (_currState)
         {
             case State.ComingForYa:
-                _navAgent.SetDestination( _player.transform.position );
+                _navAgent.SetDestination(_player.transform.position);
                 break;
             case State.Ragdoll:
                 _downTimeTimer += Time.deltaTime;
-                if( _downTimeTimer >= DownTime)
+                if (_downTimeTimer >= DownTime)
                 {
+                    for (int boneIdx = 0; boneIdx < _boneList.Count; ++boneIdx)
+                    {
+                        _boneList[boneIdx].originalPos = _boneList[boneIdx].transform.position;
+                        _boneList[boneIdx].originalRot = _boneList[boneIdx].transform.rotation;
+                    }
                     Vector3 curr = transform.position;
                     transform.MoveOnlyParent(TrueRoot.position);
                     transform.position = new Vector3(transform.position.x, curr.y, transform.position.z);
-                    ToggleRagdoll(false);
-                    _animator.SetBool("Waiting", false);
                     _currState = State.StandinUp;
+                    ToggleRagdoll(false);
+                    _standUpTimer = 0.0f;
                     _animator.SetTrigger("StandUp");
                 }
                 break;
@@ -150,17 +174,35 @@ public class Enemy : MonoBehaviour, IDamagable
                 break;
             case State.Dead:
                 _deathTimer += Time.deltaTime;
-                if(_deathTimer > deathTimeBeforeCleanup)
+                if (_deathTimer > deathTimeBeforeCleanup)
                 {
                     Destroy(gameObject);
                 }
                 break;
         }
-        if(_currState != State.Dead && _currentHealth <= 0)
+        if (_currState != State.Dead && _currentHealth <= 0)
         {
             _currState = State.Dead;
             _navAgent.enabled = false;
-           // Die();
+            // Die();
+        }
+    }
+
+    void LateUpdate()
+    {
+        if( _currState == State.StandinUp )
+        {
+            _standUpTimer += Time.deltaTime;
+            float T = Mathf.Min(_standUpTimer / RagdollBlendTime, 1.0f);
+            if (T <= 1.0f)
+            {
+                foreach (var bone in _boneList)
+                {
+                    if (bone.transform == HipJoint)
+                        bone.transform.position = Vector3.Lerp(bone.originalPos, bone.transform.position, T);
+                    bone.transform.rotation = Quaternion.Slerp(bone.originalRot, bone.transform.rotation, T);
+                }
+            }
         }
     }
 
