@@ -1,0 +1,413 @@
+fileFormatVersion: 2
+guid: 6b85f87ef2961284997a8908b2a9eb27
+timeCreated: 1518412990
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Body_mesh
+    100002: Chest
+    100004: Chest_gr
+    100006: Chest_joint
+    100008: Chest_joint 1
+    100010: Chest_locator
+    100012: cluster10Handle
+    100014: cluster1Handle
+    100016: cluster2Handle
+    100018: cluster3Handle
+    100020: cluster4Handle
+    100022: cluster7Handle
+    100024: cluster8Handle
+    100026: cluster9Handle
+    100028: curve1
+    100030: curve2
+    100032: curve4
+    100034: curve5
+    100036: Global
+    100038: Head
+    100040: Head__joint
+    100042: Hip
+    100044: joint19
+    100046: joint19 1
+    100048: joint28
+    100050: joint30
+    100052: joint32
+    100054: joint32 1
+    100056: joint35
+    100058: joint35 1
+    100060: joint35 2
+    100062: joint35 3
+    100064: joint35 4
+    100066: joint47
+    100068: joint50
+    100070: joint53
+    100072: joint56
+    100074: joint59
+    100076: joint6
+    100078: joint6 1
+    100080: joint61
+    100082: joint61 1
+    100084: joint63
+    100086: L_Ball_ik
+    100088: L_Ball_roll
+    100090: L_Clavicle
+    100092: L_Clavicle_joint
+    100094: L_Elbow
+    100096: L_Elbow_gr
+    100098: L_Elbow_joint
+    100100: L_Finger1
+    100102: L_Finger11_joint
+    100104: L_Finger12_joint
+    100106: L_Finger2
+    100108: L_Finger21_joint
+    100110: L_Finger22_joint
+    100112: L_Finger3
+    100114: L_Finger31_joint
+    100116: L_Finger32_joint
+    100118: L_Finger4
+    100120: L_Finger41_joint
+    100122: L_Finger42_joint
+    100124: L_Foot_joint
+    100126: L_ForeArm_joint
+    100128: L_ForeArm_Twist_joint
+    100130: L_Hand
+    100132: L_Hand_gr
+    100134: L_Hand_gr_main
+    100136: L_Hand_ik
+    100138: L_Hill_roll
+    100140: L_Knee
+    100142: L_Knee_gr
+    100144: L_Knee_joint
+    100146: L_Leg
+    100148: L_Leg_gr
+    100150: L_Leg_ik
+    100152: L_Leg_joint
+    100154: L_Leg_Twist_joint
+    100156: L_Shoulder_FK
+    100158: L_Shoulder_joint
+    100160: L_Shoulder_Twist_joint
+    100162: L_Thig_FK
+    100164: L_Thig_FK1
+    100166: L_Thig_joint
+    100168: L_Thig_Twist_joint
+    100170: L_Thumb
+    100172: L_Thumb1_joint
+    100174: L_Thumb2_joint
+    100176: L_Toe
+    100178: L_Toe_gp
+    100180: L_Toe_gr
+    100182: L_Toe_ik
+    100184: L_Toe_ik1
+    100186: L_Toe_joint
+    100188: L_Toe_roll
+    100190: L_Wrist_joint1
+    100192: Main_Transform
+    100194: Neck_ikHandle
+    100196: Neck_joint
+    100198: Neck_poleVector_base
+    100200: NeckPoleVector_locator
+    100202: Object_gr
+    100204: Object_L_hand
+    100206: Object_R_hand
+    100208: pointCurves
+    100210: R_Ball_ik
+    100212: R_Ball_roll
+    100214: R_Clavicle
+    100216: R_Clavicle_joint
+    100218: R_Elbow
+    100220: R_Elbow_gr
+    100222: R_Elbow_joint
+    100224: R_Finger1
+    100226: R_Finger11_joint
+    100228: R_Finger12_joint
+    100230: R_Finger2
+    100232: R_Finger21_joint
+    100234: R_Finger22_joint
+    100236: R_Finger3
+    100238: R_Finger31_joint
+    100240: R_Finger32_joint
+    100242: R_Finger4
+    100244: R_Finger41_joint
+    100246: R_Finger42_joint
+    100248: R_Foot_joint
+    100250: R_ForeArm_joint
+    100252: R_ForeArm_Twist_joint
+    100254: R_Hand
+    100256: R_Hand_gr
+    100258: R_Hand_gr_main
+    100260: R_Hand_ik
+    100262: R_Hill_roll
+    100264: R_Knee
+    100266: R_Knee_gr
+    100268: R_Knee_joint
+    100270: R_Leg
+    100272: R_Leg_gr
+    100274: R_Leg_ik
+    100276: R_Leg_joint
+    100278: R_Leg_Twist_joint
+    100280: R_Shoulder_FK
+    100282: R_Shoulder_joint
+    100284: R_Shoulder_Twist_joint
+    100286: R_Thig_joint
+    100288: R_Thig_Twist_joint
+    100290: R_Thumb
+    100292: R_Thumb1_joint
+    100294: R_Thumb2_joint
+    100296: R_Toe
+    100298: R_Toe_ik
+    100300: R_Toe_ik1
+    100302: R_Toe_joint
+    100304: R_Toe_roll
+    100306: R_Wrist_joint
+    100308: //RootNode
+    100310: Spine
+    100312: Spine_gr
+    100314: Spine_joint
+    100316: Spine_locator
+    100318: world_ik
+    400000: Body_mesh
+    400002: Chest
+    400004: Chest_gr
+    400006: Chest_joint
+    400008: Chest_joint 1
+    400010: Chest_locator
+    400012: cluster10Handle
+    400014: cluster1Handle
+    400016: cluster2Handle
+    400018: cluster3Handle
+    400020: cluster4Handle
+    400022: cluster7Handle
+    400024: cluster8Handle
+    400026: cluster9Handle
+    400028: curve1
+    400030: curve2
+    400032: curve4
+    400034: curve5
+    400036: Global
+    400038: Head
+    400040: Head__joint
+    400042: Hip
+    400044: joint19
+    400046: joint19 1
+    400048: joint28
+    400050: joint30
+    400052: joint32
+    400054: joint32 1
+    400056: joint35
+    400058: joint35 1
+    400060: joint35 2
+    400062: joint35 3
+    400064: joint35 4
+    400066: joint47
+    400068: joint50
+    400070: joint53
+    400072: joint56
+    400074: joint59
+    400076: joint6
+    400078: joint6 1
+    400080: joint61
+    400082: joint61 1
+    400084: joint63
+    400086: L_Ball_ik
+    400088: L_Ball_roll
+    400090: L_Clavicle
+    400092: L_Clavicle_joint
+    400094: L_Elbow
+    400096: L_Elbow_gr
+    400098: L_Elbow_joint
+    400100: L_Finger1
+    400102: L_Finger11_joint
+    400104: L_Finger12_joint
+    400106: L_Finger2
+    400108: L_Finger21_joint
+    400110: L_Finger22_joint
+    400112: L_Finger3
+    400114: L_Finger31_joint
+    400116: L_Finger32_joint
+    400118: L_Finger4
+    400120: L_Finger41_joint
+    400122: L_Finger42_joint
+    400124: L_Foot_joint
+    400126: L_ForeArm_joint
+    400128: L_ForeArm_Twist_joint
+    400130: L_Hand
+    400132: L_Hand_gr
+    400134: L_Hand_gr_main
+    400136: L_Hand_ik
+    400138: L_Hill_roll
+    400140: L_Knee
+    400142: L_Knee_gr
+    400144: L_Knee_joint
+    400146: L_Leg
+    400148: L_Leg_gr
+    400150: L_Leg_ik
+    400152: L_Leg_joint
+    400154: L_Leg_Twist_joint
+    400156: L_Shoulder_FK
+    400158: L_Shoulder_joint
+    400160: L_Shoulder_Twist_joint
+    400162: L_Thig_FK
+    400164: L_Thig_FK1
+    400166: L_Thig_joint
+    400168: L_Thig_Twist_joint
+    400170: L_Thumb
+    400172: L_Thumb1_joint
+    400174: L_Thumb2_joint
+    400176: L_Toe
+    400178: L_Toe_gp
+    400180: L_Toe_gr
+    400182: L_Toe_ik
+    400184: L_Toe_ik1
+    400186: L_Toe_joint
+    400188: L_Toe_roll
+    400190: L_Wrist_joint1
+    400192: Main_Transform
+    400194: Neck_ikHandle
+    400196: Neck_joint
+    400198: Neck_poleVector_base
+    400200: NeckPoleVector_locator
+    400202: Object_gr
+    400204: Object_L_hand
+    400206: Object_R_hand
+    400208: pointCurves
+    400210: R_Ball_ik
+    400212: R_Ball_roll
+    400214: R_Clavicle
+    400216: R_Clavicle_joint
+    400218: R_Elbow
+    400220: R_Elbow_gr
+    400222: R_Elbow_joint
+    400224: R_Finger1
+    400226: R_Finger11_joint
+    400228: R_Finger12_joint
+    400230: R_Finger2
+    400232: R_Finger21_joint
+    400234: R_Finger22_joint
+    400236: R_Finger3
+    400238: R_Finger31_joint
+    400240: R_Finger32_joint
+    400242: R_Finger4
+    400244: R_Finger41_joint
+    400246: R_Finger42_joint
+    400248: R_Foot_joint
+    400250: R_ForeArm_joint
+    400252: R_ForeArm_Twist_joint
+    400254: R_Hand
+    400256: R_Hand_gr
+    400258: R_Hand_gr_main
+    400260: R_Hand_ik
+    400262: R_Hill_roll
+    400264: R_Knee
+    400266: R_Knee_gr
+    400268: R_Knee_joint
+    400270: R_Leg
+    400272: R_Leg_gr
+    400274: R_Leg_ik
+    400276: R_Leg_joint
+    400278: R_Leg_Twist_joint
+    400280: R_Shoulder_FK
+    400282: R_Shoulder_joint
+    400284: R_Shoulder_Twist_joint
+    400286: R_Thig_joint
+    400288: R_Thig_Twist_joint
+    400290: R_Thumb
+    400292: R_Thumb1_joint
+    400294: R_Thumb2_joint
+    400296: R_Toe
+    400298: R_Toe_ik
+    400300: R_Toe_ik1
+    400302: R_Toe_joint
+    400304: R_Toe_roll
+    400306: R_Wrist_joint
+    400308: //RootNode
+    400310: Spine
+    400312: Spine_gr
+    400314: Spine_joint
+    400316: Spine_locator
+    400318: world_ik
+    4300000: Body_mesh
+    9500000: //RootNode
+    13700000: Body_mesh
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: 2165d081b3da7ba498bcba9580477ca6, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
