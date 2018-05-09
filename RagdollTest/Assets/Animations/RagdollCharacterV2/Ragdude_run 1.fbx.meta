@@ -3,7 +3,7 @@ guid: 166d28d240994cf4e955505ad05ab50b
 timeCreated: 1518410781
 licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 19
   fileIDToRecycleName:
     100000: Body_mesh
     100002: Chest
@@ -202,21 +202,14 @@ ModelImporter:
     400192: Spine_gr
     400194: Spine_joint
     4300000: Body_mesh
-    7400000: Take 001
+    7400000: Run
     9500000: //RootNode
     11100000: //RootNode
     13700000: Body_mesh
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert2
-    second: {fileID: 2100000, guid: 2165d081b3da7ba498bcba9580477ca6, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -229,25 +222,251 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body_mesh
+        weight: 1
+      - path: Chest_joint
+        weight: 1
+      - path: Chest_joint/L_Thig_joint
+        weight: 1
+      - path: Chest_joint/L_Thig_joint/L_Knee_joint
+        weight: 1
+      - path: Chest_joint/L_Thig_joint/L_Knee_joint/L_Leg_joint
+        weight: 1
+      - path: Chest_joint/L_Thig_joint/L_Knee_joint/L_Leg_joint/L_Foot_joint
+        weight: 1
+      - path: Chest_joint/L_Thig_joint/L_Knee_joint/L_Leg_joint/L_Foot_joint/L_Toe_joint
+        weight: 1
+      - path: Chest_joint/L_Thig_joint/L_Knee_joint/L_Leg_joint/L_Foot_joint/L_Toe_joint/joint6
+        weight: 1
+      - path: Chest_joint/L_Thig_joint/L_Knee_joint/L_Leg_joint/L_Leg_Twist_joint
+        weight: 1
+      - path: Chest_joint/L_Thig_joint/L_Knee_joint/L_Leg_joint/L_Leg_Twist_joint/joint61
+        weight: 1
+      - path: Chest_joint/L_Thig_joint/L_Thig_Twist_joint
+        weight: 1
+      - path: Chest_joint/L_Thig_joint/L_Thig_Twist_joint/joint19
+        weight: 1
+      - path: Chest_joint/R_Thig_joint
+        weight: 1
+      - path: Chest_joint/R_Thig_joint/R_Knee_joint
+        weight: 1
+      - path: Chest_joint/R_Thig_joint/R_Knee_joint/R_Leg_joint
+        weight: 1
+      - path: Chest_joint/R_Thig_joint/R_Knee_joint/R_Leg_joint/R_Foot_joint
+        weight: 1
+      - path: Chest_joint/R_Thig_joint/R_Knee_joint/R_Leg_joint/R_Foot_joint/R_Toe_joint
+        weight: 1
+      - path: Chest_joint/R_Thig_joint/R_Knee_joint/R_Leg_joint/R_Foot_joint/R_Toe_joint/joint6
+          1
+        weight: 1
+      - path: Chest_joint/R_Thig_joint/R_Knee_joint/R_Leg_joint/R_Leg_Twist_joint
+        weight: 1
+      - path: Chest_joint/R_Thig_joint/R_Knee_joint/R_Leg_joint/R_Leg_Twist_joint/joint61
+          1
+        weight: 1
+      - path: Chest_joint/R_Thig_joint/R_Thig_Twist_joint
+        weight: 1
+      - path: Chest_joint/R_Thig_joint/R_Thig_Twist_joint/joint19 1
+        weight: 1
+      - path: Chest_joint/Spine_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Elbow_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Elbow_joint/L_ForeArm_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Elbow_joint/L_ForeArm_joint/L_ForeArm_Twist_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Elbow_joint/L_ForeArm_joint/L_ForeArm_Twist_joint/joint32
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Elbow_joint/L_ForeArm_joint/L_Wrist_joint1
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Elbow_joint/L_ForeArm_joint/L_Wrist_joint1/L_Finger11_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Elbow_joint/L_ForeArm_joint/L_Wrist_joint1/L_Finger11_joint/L_Finger12_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Elbow_joint/L_ForeArm_joint/L_Wrist_joint1/L_Finger11_joint/L_Finger12_joint/joint35
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Elbow_joint/L_ForeArm_joint/L_Wrist_joint1/L_Finger21_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Elbow_joint/L_ForeArm_joint/L_Wrist_joint1/L_Finger21_joint/L_Finger22_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Elbow_joint/L_ForeArm_joint/L_Wrist_joint1/L_Finger21_joint/L_Finger22_joint/joint35
+          1
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Elbow_joint/L_ForeArm_joint/L_Wrist_joint1/L_Finger31_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Elbow_joint/L_ForeArm_joint/L_Wrist_joint1/L_Finger31_joint/L_Finger32_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Elbow_joint/L_ForeArm_joint/L_Wrist_joint1/L_Finger31_joint/L_Finger32_joint/joint35
+          2
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Elbow_joint/L_ForeArm_joint/L_Wrist_joint1/L_Finger41_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Elbow_joint/L_ForeArm_joint/L_Wrist_joint1/L_Finger41_joint/L_Finger42_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Elbow_joint/L_ForeArm_joint/L_Wrist_joint1/L_Finger41_joint/L_Finger42_joint/joint35
+          3
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Elbow_joint/L_ForeArm_joint/L_Wrist_joint1/L_Thumb1_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Elbow_joint/L_ForeArm_joint/L_Wrist_joint1/L_Thumb1_joint/L_Thumb2_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Elbow_joint/L_ForeArm_joint/L_Wrist_joint1/L_Thumb1_joint/L_Thumb2_joint/joint35
+          4
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Shoulder_Twist_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/L_Clavicle_joint/L_Shoulder_joint/L_Shoulder_Twist_joint/joint30
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/Neck_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/Neck_joint/Head__joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/Neck_joint/Head__joint/joint63
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Elbow_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Elbow_joint/R_ForeArm_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Elbow_joint/R_ForeArm_joint/R_ForeArm_Twist_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Elbow_joint/R_ForeArm_joint/R_ForeArm_Twist_joint/joint32
+          1
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Elbow_joint/R_ForeArm_joint/R_Wrist_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Elbow_joint/R_ForeArm_joint/R_Wrist_joint/R_Finger11_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Elbow_joint/R_ForeArm_joint/R_Wrist_joint/R_Finger11_joint/R_Finger12_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Elbow_joint/R_ForeArm_joint/R_Wrist_joint/R_Finger11_joint/R_Finger12_joint/joint50
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Elbow_joint/R_ForeArm_joint/R_Wrist_joint/R_Finger21_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Elbow_joint/R_ForeArm_joint/R_Wrist_joint/R_Finger21_joint/R_Finger22_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Elbow_joint/R_ForeArm_joint/R_Wrist_joint/R_Finger21_joint/R_Finger22_joint/joint53
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Elbow_joint/R_ForeArm_joint/R_Wrist_joint/R_Finger31_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Elbow_joint/R_ForeArm_joint/R_Wrist_joint/R_Finger31_joint/R_Finger32_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Elbow_joint/R_ForeArm_joint/R_Wrist_joint/R_Finger31_joint/R_Finger32_joint/joint56
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Elbow_joint/R_ForeArm_joint/R_Wrist_joint/R_Finger41_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Elbow_joint/R_ForeArm_joint/R_Wrist_joint/R_Finger41_joint/R_Finger42_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Elbow_joint/R_ForeArm_joint/R_Wrist_joint/R_Finger41_joint/R_Finger42_joint/joint59
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Elbow_joint/R_ForeArm_joint/R_Wrist_joint/R_Thumb1_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Elbow_joint/R_ForeArm_joint/R_Wrist_joint/R_Thumb1_joint/R_Thumb2_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Elbow_joint/R_ForeArm_joint/R_Wrist_joint/R_Thumb1_joint/R_Thumb2_joint/joint47
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Shoulder_Twist_joint
+        weight: 1
+      - path: Chest_joint/Spine_joint/Chest_joint 1/R_Clavicle_joint/R_Shoulder_joint/R_Shoulder_Twist_joint/joint28
+        weight: 1
+      - path: Global
+        weight: 1
+      - path: Global/Main_Transform
+        weight: 1
+      - path: Global/Main_Transform/Chest_gr
+        weight: 1
+      - path: Global/Main_Transform/Chest_gr/Chest
+        weight: 1
+      - path: Global/Main_Transform/Chest_gr/Chest/Head
+        weight: 1
+      - path: Global/Main_Transform/Chest_gr/Chest/L_Clavicle
+        weight: 1
+      - path: Global/Main_Transform/Chest_gr/Chest/R_Clavicle
+        weight: 1
+      - path: Global/Main_Transform/Hip
+        weight: 1
+      - path: Global/Main_Transform/L_Hand_gr_main
+        weight: 1
+      - path: Global/Main_Transform/L_Hand_gr_main/L_Finger1
+        weight: 1
+      - path: Global/Main_Transform/L_Hand_gr_main/L_Finger2
+        weight: 1
+      - path: Global/Main_Transform/L_Hand_gr_main/L_Finger3
+        weight: 1
+      - path: Global/Main_Transform/L_Hand_gr_main/L_Finger4
+        weight: 1
+      - path: Global/Main_Transform/L_Hand_gr_main/L_Thumb
+        weight: 1
+      - path: Global/Main_Transform/R_Hand_gr_main
+        weight: 1
+      - path: Global/Main_Transform/R_Hand_gr_main/R_Finger1
+        weight: 1
+      - path: Global/Main_Transform/R_Hand_gr_main/R_Finger2
+        weight: 1
+      - path: Global/Main_Transform/R_Hand_gr_main/R_Finger3
+        weight: 1
+      - path: Global/Main_Transform/R_Hand_gr_main/R_Finger4
+        weight: 1
+      - path: Global/Main_Transform/R_Hand_gr_main/R_Thumb
+        weight: 1
+      - path: Global/Main_Transform/Spine_gr
+        weight: 1
+      - path: Global/Main_Transform/Spine_gr/Spine
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 100
     meshCompression: 0
     addColliders: 0
-    importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -263,7 +482,6 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-    normalCalculationMode: 4
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
