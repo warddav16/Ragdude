@@ -60,7 +60,7 @@ public class Player : MonoBehaviour
                 _weapon = drop.weapon;
 				weapon3D = Instantiate( _weapon.weapon3D);
 				weapon3D.transform.parent = this.transform;
-				weapon3D.transform.localPosition = new Vector3 (0, -.4f, .4f);
+				weapon3D.transform.localPosition = new Vector3 (0, -.4f, .7f);
 				weapon3D.transform.rotation = this.transform.rotation;
 				//best to have these all preloaded under player and just toggle them on?
 

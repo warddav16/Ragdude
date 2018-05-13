@@ -29,8 +29,9 @@ public class Spawner : MonoBehaviour
     void Start()
     {
        // StartCoroutine(RepeatingSpawn());
-        StartCoroutine(Drops());
+        //StartCoroutine(Drops());
 		StartCoroutine(SpawnInView());
+		StartCoroutine(SpawnDropsInView());
 
     }
     IEnumerator RepeatingSpawn()
@@ -64,6 +65,22 @@ public class Spawner : MonoBehaviour
     {
         StopCoroutine(_spawnCoroutine);
     }
+	void SpawnInView(int spawnNum, GameObject toSpawn)
+	{
+		Instantiate<GameObject> (toSpawn);
+		Vector3 randomVector = _player.transform.position + new Vector3 (Random.Range (-10, 10), 0, 0);
+		Vector3 position = _player.transform.position + randomVector + _player.transform.forward * radius;
+		toSpawn.transform.position = position;
+
+	}
+	IEnumerator SpawnDropsInView(){
+		while (true) {
+			var toSpawn = weapons[Random.Range(0, weapons.Length)];
+			Debug.Log(toSpawn.name);
+			Spawn(1, toSpawn);
+			yield return new WaitForSeconds(waitBetweenDropSpawn);
+		}
+	}
 
 	IEnumerator SpawnInView(){
 
