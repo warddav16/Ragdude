@@ -84,6 +84,7 @@ public class Enemy : MonoBehaviour, IDamagable
         if (col != null)
         {
             var damagable = col.gameObject.GetComponent<IDamagable>();
+
             if (damagable != null)
             {
                 switch(col.gameObject.tag)
@@ -126,7 +127,7 @@ public class Enemy : MonoBehaviour, IDamagable
         {
             _animator.SetTrigger("Ragdoll");
             ToggleRagdoll(true);
-            _navAgent.enabled = false;
+            _navAgent.enabled = false; 
             _downTimeTimer = 0.0f;
             _currState = State.Ragdoll;
 
@@ -138,6 +139,7 @@ public class Enemy : MonoBehaviour, IDamagable
         Debug.Log("took " + Damage);
     }
 
+	//fired off via animation event
     public void OnIsStanding()
     {
         Debug.Log("Is Standing");
@@ -147,6 +149,7 @@ public class Enemy : MonoBehaviour, IDamagable
 
     void Update()
     {
+
         switch (_currState)
         {
             case State.ComingForYa:
@@ -171,6 +174,7 @@ public class Enemy : MonoBehaviour, IDamagable
                 }
                 break;
             case State.StandinUp:
+				//see late update
                 break;
             case State.Dead:
                 _deathTimer += Time.deltaTime;
@@ -182,9 +186,10 @@ public class Enemy : MonoBehaviour, IDamagable
         }
         if (_currState != State.Dead && _currentHealth <= 0)
         {
+			Debug.Log ("dead");
             _currState = State.Dead;
             _navAgent.enabled = false;
-            // Die();
+             Die();
         }
     }
 

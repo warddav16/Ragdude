@@ -17,7 +17,7 @@ public class BodyPart : MonoBehaviour, IDamagable {
     {
         Debug.Log(tag + " took " + Damage);
         _health -= Damage;
-        //root.Damage(Damage);
+        root.Damage(Damage);
         /* If there was renderers on each piece
         if (_health < .5 * MaxHealth && _health > .8 * MaxHealth)
         {

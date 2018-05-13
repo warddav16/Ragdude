@@ -21,14 +21,17 @@ public class Spawner : MonoBehaviour
     GameObject _player;
     private Coroutine _spawnCoroutine;
     bool isSpawning = true;
+
     void Awake()
     {
         _player = GameObject.FindGameObjectWithTag("Player");
     }
     void Start()
     {
-        //StartCoroutine(RepeatingSpawn());
-        StartCoroutine(Drops());
+       // StartCoroutine(RepeatingSpawn());
+       // StartCoroutine(Drops());
+		StartCoroutine(SpawnInView());
+
     }
     IEnumerator RepeatingSpawn()
     {
@@ -57,4 +60,25 @@ public class Spawner : MonoBehaviour
     {
         StopCoroutine(_spawnCoroutine);
     }
+
+	IEnumerator SpawnInView(){
+
+		while (isSpawning) {
+
+
+			GameObject enemy = Instantiate (toSpawn, FindNewSpawnPoint (), _player.transform.rotation);
+
+			if (Physics.CheckSphere(enemy.transform.position, 2))
+			{
+				enemy.transform.position = FindNewSpawnPoint ();
+			}
+
+			yield return new WaitForSeconds (waitBetweenEnemySpawn);
+		}
+	}
+	Vector3 FindNewSpawnPoint(){
+		Vector3 randomVector = _player.transform.position + new Vector3 (Random.Range (-10, 10), 0, 0);
+		Vector3 position = _player.transform.position + randomVector + _player.transform.forward * radius;
+		return position;
+	}
 }
