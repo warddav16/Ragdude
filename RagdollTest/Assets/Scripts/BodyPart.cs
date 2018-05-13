@@ -15,7 +15,7 @@ public class BodyPart : MonoBehaviour, IDamagable {
     }
     public void Damage(int Damage)
     {
-        Debug.Log(tag + " took " + Damage);
+//        Debug.Log(tag + " took " + Damage);
         _health -= Damage;
         root.Damage(Damage);
         /* If there was renderers on each piece

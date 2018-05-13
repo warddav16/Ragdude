@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public int movementSpeed = 2, rotationSpeed = 2;
     public float phoneSpeed = .25f;
     public Weapon _weapon;
+	GameObject weapon3D;
 
     void Awake()
     {
@@ -55,7 +56,14 @@ public class Player : MonoBehaviour
             if (drop = outInfo.collider.transform.root.GetComponent<Drop>())
             {
                 //Set Weapon
+				Destroy(weapon3D);
                 _weapon = drop.weapon;
+				weapon3D = Instantiate( _weapon.weapon3D);
+				weapon3D.transform.parent = this.transform;
+				weapon3D.transform.localPosition = new Vector3 (0, -.4f, .4f);
+				weapon3D.transform.rotation = this.transform.rotation;
+				//best to have these all preloaded under player and just toggle them on?
+
                 Destroy(outInfo.collider.gameObject);
             }
             else

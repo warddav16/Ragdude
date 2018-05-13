@@ -10,6 +10,7 @@ public class Weapon :  ScriptableObject
     public float Force = 20;
     private int _ammo = 0;
     public string Name = "Default";
+	public GameObject weapon3D;
     public int Ammo
     {
         get

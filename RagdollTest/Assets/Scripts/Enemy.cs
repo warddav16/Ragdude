@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour, IDamagable
 {
     enum State
     {
+		Taunting,
         ComingForYa, 
         Ragdoll,
         StandinUp,
@@ -44,6 +45,10 @@ public class Enemy : MonoBehaviour, IDamagable
     public BodyPartDamages bodyDamage;
     public int deathTimeBeforeCleanup = 5;
     float _deathTimer = 0;
+	private float _tauntTimer;
+	private float animSpeed;
+	private float _tauntAnimLength;
+
     [System.Serializable]
     public class BodyPartDamages
     {
@@ -59,6 +64,15 @@ public class Enemy : MonoBehaviour, IDamagable
         _collider = GetComponent<Collider>();
         _deathTimer = 0;
         ToggleRagdoll(false);
+
+		_navAgent.speed = Random.Range(.5f,3);
+		animSpeed = Mathf.Lerp (0, 1, Mathf.InverseLerp (.5f, 3, _navAgent.speed));//map the speed the agent can can move to the mecanim blend tree 0-1
+		_animator.SetFloat("Speed",animSpeed);
+		if (animSpeed < .2f) {
+			_animator.SetFloat("Speed",0);
+			_navAgent.speed = 0;
+		}
+
 
         var boneTransforms = TrueRoot.gameObject.GetComponentsInChildren<Transform>();
         for( int i = 0; i < boneTransforms.Length; ++i )
@@ -136,7 +150,7 @@ public class Enemy : MonoBehaviour, IDamagable
     public void Damage(int Damage)
     {
         _currentHealth -= Damage;
-        Debug.Log("took " + Damage);
+//        Debug.Log("took " + Damage);
     }
 
 	//fired off via animation event
@@ -152,8 +166,29 @@ public class Enemy : MonoBehaviour, IDamagable
 
         switch (_currState)
         {
-            case State.ComingForYa:
-                _navAgent.SetDestination(_player.transform.position);
+		case State.Taunting:
+
+			_animator.SetTrigger ("Taunt");
+			_navAgent.speed = 0;
+			_tauntAnimLength += Time.deltaTime;
+
+			if (_tauntAnimLength > _animator.GetCurrentAnimatorStateInfo (0).length) {
+				Debug.Log ("ok now");
+				_tauntAnimLength = 0;
+				_currState = State.ComingForYa;
+			}
+		
+			break;
+		case State.ComingForYa:
+			_navAgent.speed = animSpeed;
+			_navAgent.SetDestination (_player.transform.position);				
+				//set random taunt anim
+			_tauntTimer += Time.deltaTime;
+			if (_tauntTimer >= 4) {
+				_tauntTimer = 0;
+
+				_currState = State.Taunting;
+			}
                 break;
             case State.Ragdoll:
                 _downTimeTimer += Time.deltaTime;
@@ -213,7 +248,7 @@ public class Enemy : MonoBehaviour, IDamagable
 
     void Die()
     {
-        transform.root.GetChild(1).GetComponent<Renderer>().material.color = Color.black;
+       // transform.root.GetChild(1).GetComponent<Renderer>().material.color = Color.black;
         Destroy(_mapPoint);
         _currState = State.Dead;
         ScoreManager.Instance.AddScore(1);

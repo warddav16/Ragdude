@@ -29,7 +29,7 @@ public class Spawner : MonoBehaviour
     void Start()
     {
        // StartCoroutine(RepeatingSpawn());
-       // StartCoroutine(Drops());
+        StartCoroutine(Drops());
 		StartCoroutine(SpawnInView());
 
     }
@@ -43,9 +43,13 @@ public class Spawner : MonoBehaviour
     }
     IEnumerator Drops()
     {
-        var toSpawn = weapons[Random.Range(0, weapons.Length)];
-        Spawn(1, toSpawn);
-        yield return new WaitForSeconds(waitBetweenDropSpawn);
+		while (true) {
+			var toSpawn = weapons[Random.Range(0, weapons.Length)];
+			Debug.Log(toSpawn.name);
+			Spawn(1, toSpawn);
+			yield return new WaitForSeconds(waitBetweenDropSpawn);
+		}
+    
     }
     void Spawn(int spawnNum, GameObject toSpawn)
     {
@@ -68,12 +72,15 @@ public class Spawner : MonoBehaviour
 
 			GameObject enemy = Instantiate (toSpawn, FindNewSpawnPoint (), _player.transform.rotation);
 
+			//instead create a spawn box the width of the enemy, make sure spawn box is clear, then have spawn box call this function
+			//so that the enemy doesnt collider with itself
 			if (Physics.CheckSphere(enemy.transform.position, 2))
 			{
 				enemy.transform.position = FindNewSpawnPoint ();
 			}
 
 			yield return new WaitForSeconds (waitBetweenEnemySpawn);
+
 		}
 	}
 	Vector3 FindNewSpawnPoint(){
