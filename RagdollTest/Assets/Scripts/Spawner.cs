@@ -84,7 +84,8 @@ public class Spawner : MonoBehaviour
 
 	IEnumerator SpawnInView(){
 
-		while (isSpawning) {
+		while (isSpawning) 
+		{
 
 
 			GameObject enemy = Instantiate (toSpawn, FindNewSpawnPoint (), _player.transform.rotation);
