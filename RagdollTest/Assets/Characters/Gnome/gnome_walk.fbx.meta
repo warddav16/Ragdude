@@ -1,0 +1,242 @@
+fileFormatVersion: 2
+guid: 9184ff6cfd590ca46a0a49e469a52ca5
+timeCreated: 1530472210
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: beard
+    100002: bootsL
+    100004: bootsR
+    100006: cap
+    100008: chest
+    100010: elbowL
+    100012: elbowR
+    100014: face
+    100016: fingerL
+    100018: fingerR
+    100020: footL
+    100022: footR
+    100024: Gnome_Mesh
+    100026: //RootNode
+    100028: handL
+    100030: handR
+    100032: head
+    100034: hipL
+    100036: hipR
+    100038: key
+    100040: keycontroller
+    100042: kneeL
+    100044: kneeR
+    100046: neck
+    100048: pants
+    100050: root
+    100052: shirt
+    100054: shoulderL
+    100056: shoulderR
+    100058: stache
+    100060: toeL
+    100062: toeR
+    100064: wristL
+    100066: wristR
+    400000: beard
+    400002: bootsL
+    400004: bootsR
+    400006: cap
+    400008: chest
+    400010: elbowL
+    400012: elbowR
+    400014: face
+    400016: fingerL
+    400018: fingerR
+    400020: footL
+    400022: footR
+    400024: Gnome_Mesh
+    400026: //RootNode
+    400028: handL
+    400030: handR
+    400032: head
+    400034: hipL
+    400036: hipR
+    400038: key
+    400040: keycontroller
+    400042: kneeL
+    400044: kneeR
+    400046: neck
+    400048: pants
+    400050: root
+    400052: shirt
+    400054: shoulderL
+    400056: shoulderR
+    400058: stache
+    400060: toeL
+    400062: toeR
+    400064: wristL
+    400066: wristR
+    2300000: key
+    3300000: key
+    4300000: cap
+    4300002: bootsR
+    4300004: bootsL
+    4300006: handR
+    4300008: handL
+    4300010: pants
+    4300012: shirt
+    4300014: face
+    4300016: beard
+    4300018: stache
+    4300020: key
+    7400000: gnome_walk
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: beard
+    13700002: bootsL
+    13700004: bootsR
+    13700006: cap
+    13700008: face
+    13700010: handL
+    13700012: handR
+    13700014: pants
+    13700016: shirt
+    13700018: stache
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cap
+    second: {fileID: 2100000, guid: 8530d096db9789d48885b7fbfed3539d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GnomeShirt
+    second: {fileID: 2100000, guid: 233d221983e09ed448d84fb143980303, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: beard1
+    second: {fileID: 2100000, guid: 26763fe9bc3a0ff41bba19dcf7fd8209, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: boots
+    second: {fileID: 2100000, guid: 72ed58452ad289e49ba5a86b9ef621cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: key1
+    second: {fileID: 2100000, guid: a036e0783b8773f4cba7b7d3a804c9d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pants3
+    second: {fileID: 2100000, guid: 4c2973868efd9bd4089f626bf543394e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skin
+    second: {fileID: 2100000, guid: f05cc957a11f5b043971069068ea5d3e, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: gnome_walk
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

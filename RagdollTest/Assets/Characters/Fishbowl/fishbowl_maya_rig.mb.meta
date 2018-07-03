@@ -1,0 +1,486 @@
+fileFormatVersion: 2
+guid: 0a9e0b5950d02dc47b332e67e7873f68
+timeCreated: 1530578610
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: B_Attachment
+    100002: B_Attachment 1
+    100004: Fishbowl
+    100006: Fishbowl 1
+    100008: //RootNode
+    100010: group
+    100012: Head
+    100014: ikHandle1
+    100016: ikHandle2
+    100018: ikHandle3
+    100020: ikHandle4
+    100022: L_Arm
+    100024: L_Arm 1
+    100026: L_Claw
+    100028: L_Claw 1
+    100030: L_Elbow
+    100032: L_Foot
+    100034: L_Foot 1
+    100036: L_Foot 2
+    100038: L_Knee
+    100040: L_Leg
+    100042: L_Leg 1
+    100044: L_Shoulder
+    100046: L_Thigh
+    100048: L_Wrist
+    100050: LB_Claw
+    100052: LB_Toe
+    100054: LF_Toe
+    100056: LL_Toe
+    100058: locator1
+    100060: locator2
+    100062: locator3
+    100064: locator4
+    100066: LR_Toe
+    100068: LU_Claw
+    100070: Mesh_Group
+    100072: Mesh_Group1
+    100074: nurbsCircle1
+    100076: nurbsCircle2
+    100078: nurbsCircle3
+    100080: nurbsCircle4
+    100082: nurbsCircle5
+    100084: nurbsCircle6
+    100086: pasted__TropicalFish13
+    100088: polySurface1
+    100090: polySurface10
+    100092: polySurface11
+    100094: polySurface12
+    100096: polySurface13
+    100098: polySurface14
+    100100: polySurface15
+    100102: polySurface16
+    100104: polySurface17
+    100106: polySurface18
+    100108: polySurface19
+    100110: polySurface2
+    100112: polySurface20
+    100114: polySurface21
+    100116: polySurface22
+    100118: polySurface23
+    100120: polySurface24
+    100122: polySurface25
+    100124: polySurface26
+    100126: polySurface27
+    100128: polySurface28
+    100130: polySurface29
+    100132: polySurface3
+    100134: polySurface30
+    100136: polySurface31
+    100138: polySurface32
+    100140: polySurface33
+    100142: polySurface34
+    100144: polySurface35
+    100146: polySurface36
+    100148: polySurface37
+    100150: polySurface38
+    100152: polySurface39
+    100154: polySurface4
+    100156: polySurface40
+    100158: polySurface41
+    100160: polySurface42
+    100162: polySurface43
+    100164: polySurface44
+    100166: polySurface45
+    100168: polySurface46
+    100170: polySurface5
+    100172: polySurface6
+    100174: polySurface7
+    100176: polySurface8
+    100178: polySurface9
+    100180: R_Arm
+    100182: R_Arm 1
+    100184: R_Claw
+    100186: R_Claw 1
+    100188: R_Elbow
+    100190: R_Foot
+    100192: R_Foot 1
+    100194: R_Foot 2
+    100196: R_Knee
+    100198: R_Leg
+    100200: R_Leg 1
+    100202: R_Shoulder
+    100204: R_Thigh
+    100206: R_Wrist
+    100208: RB_Claw
+    100210: RB_Toe
+    100212: RF_Toe
+    100214: RL_Toe
+    100216: Root
+    100218: RR_Toe
+    100220: RU_Claw
+    400000: B_Attachment
+    400002: B_Attachment 1
+    400004: Fishbowl
+    400006: Fishbowl 1
+    400008: //RootNode
+    400010: group
+    400012: Head
+    400014: ikHandle1
+    400016: ikHandle2
+    400018: ikHandle3
+    400020: ikHandle4
+    400022: L_Arm
+    400024: L_Arm 1
+    400026: L_Claw
+    400028: L_Claw 1
+    400030: L_Elbow
+    400032: L_Foot
+    400034: L_Foot 1
+    400036: L_Foot 2
+    400038: L_Knee
+    400040: L_Leg
+    400042: L_Leg 1
+    400044: L_Shoulder
+    400046: L_Thigh
+    400048: L_Wrist
+    400050: LB_Claw
+    400052: LB_Toe
+    400054: LF_Toe
+    400056: LL_Toe
+    400058: locator1
+    400060: locator2
+    400062: locator3
+    400064: locator4
+    400066: LR_Toe
+    400068: LU_Claw
+    400070: Mesh_Group
+    400072: Mesh_Group1
+    400074: nurbsCircle1
+    400076: nurbsCircle2
+    400078: nurbsCircle3
+    400080: nurbsCircle4
+    400082: nurbsCircle5
+    400084: nurbsCircle6
+    400086: pasted__TropicalFish13
+    400088: polySurface1
+    400090: polySurface10
+    400092: polySurface11
+    400094: polySurface12
+    400096: polySurface13
+    400098: polySurface14
+    400100: polySurface15
+    400102: polySurface16
+    400104: polySurface17
+    400106: polySurface18
+    400108: polySurface19
+    400110: polySurface2
+    400112: polySurface20
+    400114: polySurface21
+    400116: polySurface22
+    400118: polySurface23
+    400120: polySurface24
+    400122: polySurface25
+    400124: polySurface26
+    400126: polySurface27
+    400128: polySurface28
+    400130: polySurface29
+    400132: polySurface3
+    400134: polySurface30
+    400136: polySurface31
+    400138: polySurface32
+    400140: polySurface33
+    400142: polySurface34
+    400144: polySurface35
+    400146: polySurface36
+    400148: polySurface37
+    400150: polySurface38
+    400152: polySurface39
+    400154: polySurface4
+    400156: polySurface40
+    400158: polySurface41
+    400160: polySurface42
+    400162: polySurface43
+    400164: polySurface44
+    400166: polySurface45
+    400168: polySurface46
+    400170: polySurface5
+    400172: polySurface6
+    400174: polySurface7
+    400176: polySurface8
+    400178: polySurface9
+    400180: R_Arm
+    400182: R_Arm 1
+    400184: R_Claw
+    400186: R_Claw 1
+    400188: R_Elbow
+    400190: R_Foot
+    400192: R_Foot 1
+    400194: R_Foot 2
+    400196: R_Knee
+    400198: R_Leg
+    400200: R_Leg 1
+    400202: R_Shoulder
+    400204: R_Thigh
+    400206: R_Wrist
+    400208: RB_Claw
+    400210: RB_Toe
+    400212: RF_Toe
+    400214: RL_Toe
+    400216: Root
+    400218: RR_Toe
+    400220: RU_Claw
+    2300000: B_Attachment 1
+    2300002: Fishbowl 1
+    2300004: L_Arm 1
+    2300006: L_Claw 1
+    2300008: L_Foot 1
+    2300010: L_Leg 1
+    2300012: pasted__TropicalFish13
+    2300014: R_Arm 1
+    2300016: R_Claw 1
+    2300018: R_Foot 1
+    2300020: R_Leg 1
+    3300000: B_Attachment 1
+    3300002: Fishbowl 1
+    3300004: L_Arm 1
+    3300006: L_Claw 1
+    3300008: L_Foot 1
+    3300010: L_Leg 1
+    3300012: pasted__TropicalFish13
+    3300014: R_Arm 1
+    3300016: R_Claw 1
+    3300018: R_Foot 1
+    3300020: R_Leg 1
+    4300000: L_Claw
+    4300002: R_Claw
+    4300004: B_Attachment
+    4300006: polySurface35
+    4300008: polySurface36
+    4300010: polySurface37
+    4300012: polySurface38
+    4300014: polySurface39
+    4300016: polySurface40
+    4300018: polySurface41
+    4300020: polySurface42
+    4300022: polySurface43
+    4300024: polySurface44
+    4300026: polySurface45
+    4300028: polySurface46
+    4300030: polySurface23
+    4300032: polySurface24
+    4300034: polySurface25
+    4300036: polySurface26
+    4300038: polySurface27
+    4300040: polySurface28
+    4300042: polySurface29
+    4300044: polySurface30
+    4300046: polySurface31
+    4300048: polySurface32
+    4300050: polySurface33
+    4300052: polySurface34
+    4300054: L_Foot
+    4300056: R_Foot
+    4300058: polySurface1
+    4300060: polySurface2
+    4300062: polySurface3
+    4300064: polySurface4
+    4300066: polySurface5
+    4300068: polySurface6
+    4300070: polySurface7
+    4300072: polySurface8
+    4300074: polySurface9
+    4300076: polySurface10
+    4300078: polySurface11
+    4300080: Fishbowl
+    4300082: polySurface12
+    4300084: polySurface13
+    4300086: polySurface14
+    4300088: polySurface15
+    4300090: polySurface16
+    4300092: polySurface17
+    4300094: polySurface18
+    4300096: polySurface19
+    4300098: polySurface20
+    4300100: polySurface21
+    4300102: polySurface22
+    4300104: L_Claw
+    4300106: R_Claw
+    4300108: B_Attachment
+    4300110: R_Arm
+    4300112: L_Arm
+    4300114: L_Foot
+    4300116: R_Foot
+    4300118: R_Leg
+    4300120: Fishbowl
+    4300122: L_Leg
+    4300124: pasted__TropicalFish13
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: B_Attachment
+    13700002: Fishbowl
+    13700004: L_Claw
+    13700006: L_Foot
+    13700008: polySurface1
+    13700010: polySurface10
+    13700012: polySurface11
+    13700014: polySurface12
+    13700016: polySurface13
+    13700018: polySurface14
+    13700020: polySurface15
+    13700022: polySurface16
+    13700024: polySurface17
+    13700026: polySurface18
+    13700028: polySurface19
+    13700030: polySurface2
+    13700032: polySurface20
+    13700034: polySurface21
+    13700036: polySurface22
+    13700038: polySurface23
+    13700040: polySurface24
+    13700042: polySurface25
+    13700044: polySurface26
+    13700046: polySurface27
+    13700048: polySurface28
+    13700050: polySurface29
+    13700052: polySurface3
+    13700054: polySurface30
+    13700056: polySurface31
+    13700058: polySurface32
+    13700060: polySurface33
+    13700062: polySurface34
+    13700064: polySurface35
+    13700066: polySurface36
+    13700068: polySurface37
+    13700070: polySurface38
+    13700072: polySurface39
+    13700074: polySurface4
+    13700076: polySurface40
+    13700078: polySurface41
+    13700080: polySurface42
+    13700082: polySurface43
+    13700084: polySurface44
+    13700086: polySurface45
+    13700088: polySurface46
+    13700090: polySurface5
+    13700092: polySurface6
+    13700094: polySurface7
+    13700096: polySurface8
+    13700098: polySurface9
+    13700100: R_Claw
+    13700102: R_Foot
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Default_Material
+    second: {fileID: 2100000, guid: 93595690336ced34698d3b9d06c1e24a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal1
+    second: {fileID: 2100000, guid: 9820da4711bc84d45b19cad7b3af3206, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Robot1
+    second: {fileID: 2100000, guid: 244153e0535393849b73cc783d6cce30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Water
+    second: {fileID: 2100000, guid: c2c864110701c86429ed08cc9c022818, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 049ded0f92fd2d44889bc36b8f523856, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert6
+    second: {fileID: 2100000, guid: d3919f1a22de22544a72b1151f393f7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert7
+    second: {fileID: 2100000, guid: 3a10250920306c64b9c761d49ce9a88e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert8
+    second: {fileID: 2100000, guid: 17fe8b9c89e48a943898ecb4d9396186, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
